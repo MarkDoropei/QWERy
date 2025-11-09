@@ -17,27 +17,28 @@
         <nav class="navbar">
             <h1 class="discover__header-text">QWERy</h1>
             <div class="discover__box">
-                <a class="discover__link">
+                <a class="discover__link" href="#holidays">
                     <p class="discover__item">Information</p>
                 </a>
-                <a class="discover__link">
+                <a class="discover__link" href="#bromo">
                     <p class="discover__item">About us</p>
                 </a>
-                <a class="discover__link">
+                <a class="discover__link" href="#culture">
                     <p class="discover__item">Culture</p>
                 </a>
             </div>
             <div class="discover__input-box">
-                <img src="images/loop.png" class="discover__click-img">
-                <input type="text" class="discover__input" placeholder="Search">
+                <img src="images/loop.png" class="discover__click-img" onclick="highlightWord()">
+                <input type="text" class="discover__input" placeholder="Search" id="searchInput">
+                <button onclick="clearHighlights()" class="discover__click-btn">clear</button>
             </div>
         </nav>
         <article class="vertical-article">
             <p>Follow us</p>
             <div class="img__box">
-                <img src="images/instagram.png">
-                <img src="images/twitter.png">
-                <img src="images/Facebook.png">
+                <a href="https://www.instagram.com/"><img src="images/instagram.png"></a>
+                <a href="https://x.com/"><img src="images/twitter.png"></a>
+                <a href="https://www.facebook.com/"><img src="images/Facebook.png"></a>
             </div>
         </article>
         <div class="discover__main">
@@ -55,7 +56,7 @@
             <a href="#down" class="scroll-link"><img class="scroll-img" src="images/arrow_down.png"></a>
         </div>
     </div>
-    <div class="holidays">
+    <div class="holidays" id="holidays">
         <div class="container">
             <div class="holidays__wrapper">
                 <div>
@@ -78,7 +79,7 @@
                         The beautiful waters of Komodo will make you meet many travelers <br>
                         from other countries.
                     </p>
-                    <a class="read-more__link"> 
+                    <a class="read-more__link" href="H-readmore.html"> 
                         <p>read more</p>
                         <img src="images/arrow.png">
                     </a>
@@ -86,7 +87,7 @@
             </div>
         </div>
     </div>
-    <div class="bromo">
+    <div class="bromo" id="bromo">
         <div class="container">
             <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
@@ -106,7 +107,7 @@
                                     sky, and gazing at the beauty of the sun moving out of its bed or otherwise enjoying the dim twilight from <br>
                                     the Bromo ridge is an unforgettable experience when visiting Bromo.
                                 </p>
-                                <a class="read-more__link"> 
+                                <a class="read-more__link" href="H-readmore.html"> 
                                     <p>read more</p>
                                     <img src="images/arrow.png">
                                 </a>
@@ -120,15 +121,15 @@
                                     <hr>
                                 </div>
                                 <h2 class="bromo__big-text">
-                                    Steady your steps, we <br>
-                                    will climb together!
+                                    Hold on tight, <br>
+                                    we'll climb together!
                                 </h2>
                                 <p class="bromo-text">
-                                    Enjoying the vast expanse of the sea of ​sand, witnessing the splendor of Mount Semeru that soars into the <br> 
-                                    sky, and gazing at the beauty of the sun moving out of its bed or otherwise enjoying the dim twilight from <br>
-                                    the Bromo ridge is an unforgettable experience when visiting Bromo.
+                                   Experiencing the endless stretch of the Sea of Sand, marveling at the majestic height of Mount Semeru <br>
+                                   reaching into the sky, and watching the sunrise or the enchanting twilight from the Bromo viewpoint create <br>
+                                   unforgettable memories during your visit to Bromo.
                                 </p>
-                                <a class="read-more__link"> 
+                                <a class="read-more__link" href="H-readmore.html"> 
                                     <p>read more</p>
                                     <img src="images/arrow.png">
                                 </a>
@@ -142,15 +143,15 @@
                                     <hr>
                                 </div>
                                 <h2 class="bromo__big-text">
-                                    Steady your steps, we <br>
-                                    will climb together!
+                                    Get ready, <br>
+                                    we’ll ascend together!
                                 </h2>
                                 <p class="bromo-text">
-                                    Enjoying the vast expanse of the sea of ​sand, witnessing the splendor of Mount Semeru that soars into the <br> 
-                                    sky, and gazing at the beauty of the sun moving out of its bed or otherwise enjoying the dim twilight from <br>
-                                    the Bromo ridge is an unforgettable experience when visiting Bromo.
+                                    Relishing the vastness of the Sea of Sand, witnessing the grandeur of Mount Semeru piercing the sky, and <br>
+                                    admiring the sunrise or the tranquil dusk from the Bromo peak are truly unforgettable moments when <br>
+                                    you are exploring Bromo.
                                 </p>
-                                <a class="read-more__link"> 
+                                <a class="read-more__link" href="H-readmore.html"> 
                                     <p>read more</p>
                                     <img src="images/arrow.png">
                                 </a>
@@ -162,7 +163,7 @@
             </div> 
         </div>
     </div>
-    <div class="culture">
+    <div class="culture" id="culture">
         <div class="container">
             <div class="culture__wrapper">
                 <div class="culture__box">
@@ -180,7 +181,7 @@
                         characteristic when they mingle with other tribes and become basic traits <br>
                         that are passed down by their ancestors.
                     </p>
-                    <a class="read-more__link"> 
+                    <a class="read-more__link" href="H-readmore.html"> 
                         <p>read more</p>
                         <img src="images/arrow.png">
                     </a>
@@ -250,9 +251,9 @@
                     </p>
                 </div>
                 <div class="footer-bottom-right">
-                    <img src="images/Facebook.png">
-                    <img src="images/twitter.png">
-                    <img src="images/instagram.png">
+                    <a href="https://www.facebook.com/"><img src="images/Facebook.png"></a>
+                    <a href="https://x.com/"><img src="images/twitter.png"></a>
+                    <a href="https://www.instagram.com/"><img src="images/instagram.png"></a>
                 </div>
             </div>
         </div>

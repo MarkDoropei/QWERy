@@ -24,7 +24,7 @@ body{
 .navbar{
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items:baseline;
     padding:64px 84px 0px 85px;
     color:#fff;
 }
@@ -54,6 +54,8 @@ body{
 
 .discover__link{
     cursor: pointer;
+    text-decoration: none;
+    color:#fff;
 }
 
 .discover__input{
@@ -67,12 +69,26 @@ body{
     width:54px;
     height: 23px;
     opacity: 0.7;
+    margin-left:15px;
+    margin-right:15px;
 }
 
 .discover__click-img{
     height:20px;
     width:20px;
     opacity: 0.3;
+    cursor: pointer;
+}
+
+.discover__click-btn{
+    border:none;
+    opacity: 0.2;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 17px;
+    background:transparent;
+    color:#fff;
+    cursor: pointer;
 }
 
 .discover__input-box{
@@ -275,6 +291,26 @@ body{
 
 .bromo-bg{
     background-image: url(images/Big_background.png);
+    object-fit: cover;
+    width: 1461px;
+    height: 985px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.bromo-bg:nth-child(2){
+    background-image: url(images/background2.webp);
+    object-fit: cover;
+    width: 1461px;
+    height: 985px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.bromo-bg:nth-child(3){
+    background-image: url(images/background3.jpg);
     object-fit: cover;
     width: 1461px;
     height: 985px;    
@@ -541,4 +577,379 @@ body{
     opacity:0.5;
     margin-top: 156px;
     padding-bottom: 118px;
+}
+
+.readmore{
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color:#fff
+}
+
+mark{
+    text-decoration: underline;
+    opacity: 0.5;
+    color: #fff;
+}
+
+@media(max-width:1470px){
+    .container{
+        max-width:1180px;
+        margin: 0 auto;
+    }
+    .discover__main-Ltext{
+        font-size: 88px;
+    }
+     .discover__main-Stext{
+        font-size: 16px;
+    }
+    .holidays__header-text{
+        font-size: 58px;
+        line-height: 110%;
+    }
+    .holidays-text{
+        line-height: 30px;
+    }
+    .culture__header-text{
+        font-size: 58px;
+        line-height: 110%;
+    }
+    .culture-text{
+        line-height: 30px;
+    }
+}
+
+@media(max-width:1130px){
+    .holidays__header-text br{
+        display: none;
+    }
+    .holidays__box{
+        margin-left: 131px;
+    }
+    .bromo__big-text{
+        font-size: 58px;
+    }
+    .bromo-text{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .footer-top-Ltext{
+        font-size: 42px;
+    }
+    .footer-top-Stext{
+        font-size: 20px;
+    }
+    .footer-top-btn{
+        width:209px;
+        height:59px;
+    }
+    .footer-mid-item h2{
+        font-size: 32px;
+    }
+     .footer-mid-item:nth-child(2){
+        gap:25px;
+    }
+    .footer-mid-item:nth-child(3){
+        gap:25px;
+    }
+     .footer-mid-item:nth-child(4){
+        gap:25px;
+    }
+    .culture__img{
+        margin-left: 20px;
+    }
+}
+
+@media(max-width:1050px){
+    .vertical-article{
+        margin-left: 59px;
+    }
+}
+
+@media(max-width:990px){
+    .discover__main-Ltext{
+        font-size: 76px;
+        line-height: 80px;
+        margin-top: 35px;
+    }
+    .discover__main-Ltext span{
+        font-size: 76px;
+        line-height: 80px;
+    }
+    .holidays-text br{
+        display: none;
+    }
+    .holidays__img{
+       max-width:480px;
+    }
+    .holidays__box{
+        margin-left: 90px;
+    }
+    .culture__img{
+        max-width:450px;
+    }
+    .footer{
+        margin: 250px 10px 0 10px;
+    }
+}
+
+@media(max-width:870px){
+    .discover{
+        height:1300px;
+    }
+    .vertical-article{
+        top:200px;
+        margin-left: 79px;
+    }
+    .discover__main-Ltext{
+        text-align: center;
+    }
+    .holidays__img{
+        max-width: 370px;
+    }
+    .holidays-text{
+        line-height: 28px;
+        margin-top: 17px;
+    }
+    .bromo {
+        margin-top: 150px;
+    }
+    .bromo__big-text {
+        font-size: 52px;
+    }
+    .culture {
+        margin-top: 100px;
+    }
+    .culture-text {
+        line-height: 28px;
+        margin-top: 17px;
+    }
+    .copyright{
+        margin-top: 78px;
+        padding-bottom: 59px;
+    }
+}
+
+@media(max-width:770px){
+    .navbar{
+        padding: 40px 55px 0px 55px;
+    }
+    .discover__input{
+        margin:0;
+    }
+    .bromo-text br{
+        display: none;
+    }
+    .footer-top-btn {
+        width: 179px;
+        height: 59px;
+    }
+    .footer-mid-item-form {
+        width: 350px;
+        height: 70px;
+        margin-top: 40px;
+    }
+    .footer-mid-item:nth-child(2) {
+        gap: 20px;
+    }
+    .footer-mid-item:nth-child(3) {
+        gap: 20px;
+    }
+    .footer-mid-item:nth-child(4) {
+        gap: 20px;
+    }
+    .footer-bottom {
+        margin-top: 53px;
+    }
+    .copyright {
+        margin-top: 59px;
+        padding-bottom: 59px;
+    }
+}
+
+@media(max-width:770px){
+    .discover {
+        height: 1000px;
+    }
+    .discover-hr {
+        width: 52px;
+    }
+    .discover__main-Stext {
+        font-size: 14px;
+        letter-spacing: 5px;
+    }
+    .discover__main-Ltext span {
+        font-size: 64px;
+    }
+    .discover__main-Ltext {
+        font-size: 64px;
+    }
+    .holidays__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .holidays__box {
+        margin:0;
+    }
+    .holidays__header-text {
+        font-size: 52px;
+        line-height: 105%;
+    }
+    .holidays-text {
+        line-height: 26px;
+        margin-top: 15px;
+        font-size:16px;
+    }
+    .upper-text {
+        display: flex;
+        align-items: center;
+        color: #FBD784;
+        font-family: Open Sans;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+    .upper-text hr {
+        width: 52px;
+    }
+    .bromo-bg:nth-child(1){
+        height:800px;
+    }
+    .bromo-bg:nth-child(2){
+        height:800px;
+    }
+    .bromo-bg:nth-child(3){
+        height:800px;
+    }
+    .culture__wrapper{
+        display: block;
+    }
+    .culture__img{
+        margin-left: 0;
+    }
+    .footer {
+        margin: 125px 10px 0 10px;
+    }
+    .footer-mid-item p {
+        font-family: Open Sans;
+        font-weight: 400;
+        font-size: 17px;
+        letter-spacing: -0.2px;
+        color: #fff;
+    }
+    .footer-mid-item h3 {
+        font-family: Open Sans;
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: -0.23px;
+        color: #FFD1A0;
+    }
+    .footer-mid-item-form img{
+        height: 50px;
+        margin-top: 20px;
+    }  
+    .footer-mid-item-form {
+        width: 320px;
+        height: 70px;
+        margin-top: 40px;
+    }
+}   
+
+@media(max-width:680px){
+    .discover__main-Ltext {
+        font-size: 42px;
+        line-height: 56px;
+    }
+    .discover__main-Ltext span{
+        font-size: 42px;
+        line-height: 56px;
+    }
+    .discover__main-Stext-box {
+        display: none;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: baseline;
+        gap: 15px;
+        margin-left: 29px;
+    }
+    .holidays__header-text{
+        font-size: 42px;
+    }
+    .bromo__big-text {
+        font-size: 42px;
+    }
+    .culture__header-text{
+        font-size: 42px;
+    }
+    .footer-mid-item h2{
+        font-size: 28px;
+    }
+    .footer-top-Ltext {
+        font-size: 36px;
+    }
+    .footer-mid-item h3 {
+        font-family: Open Sans;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: -0.23px;
+        color: #FFD1A0;
+    }
+    .footer-mid-item p {
+        font-family: Open Sans;
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: -0.2px;
+        color: #fff;
+    }
+    .footer-mid-item-form {
+        width: 270px;
+        height: 70px;
+        margin-top: 40px;
+    }
+}   
+
+@media(max-width:560px){
+    .footer-mid-item:nth-child(2){
+        display: none;
+    }
+    .footer-mid-item:nth-child(3){
+        display: none;
+    }
+    .footer-mid-item:nth-child(4){
+        display: none;
+    }
+    .holidays__img {
+        max-width: 90%;
+    }
+    .bromo {
+        margin-top: 75px;
+    }
+    .footer-top-Stext{
+        margin:0;
+    }
+    .footer-top div{
+        flex-direction: column;
+    }
+    .footer-bottom-left {
+        display: none;
+    }
+    .footer-bottom {
+        display: flex;
+        justify-content: center;
+    }
+    .culture__img {
+        max-width: 100%;
+    }
+    .vertical-article{
+        display: none;
+    }
+    .footer-mid-item-form {
+        margin-top: 20px;
+    }
 }

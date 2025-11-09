@@ -875,8 +875,8 @@ mark{
     .navbar{
         flex-direction: column;
         align-items: baseline;
-        gap: 15px;
-        margin-left: 29px;
+        gap: 25px;
+        padding:10px;
     }
     .holidays__header-text{
         font-size: 42px;
@@ -951,5 +951,14 @@ mark{
     }
     .footer-mid-item-form {
         margin-top: 20px;
+    }
+    .discover__box {
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none;
     }
 }

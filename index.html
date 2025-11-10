@@ -28,7 +28,7 @@
                 </a>
             </div>
             <div class="discover__input-box">
-                <img src="images/loop.png" class="discover__click-img" onclick="highlightWord()">
+                <img src="images/loop.png" class="discover__click-img" onclick="highlightWord()" alt="loop">
                 <input type="text" class="discover__input" placeholder="Search" id="searchInput">
                 <button onclick="clearHighlights()" class="discover__click-btn">clear</button>
             </div>
@@ -52,7 +52,7 @@
             </h2>
         </div>
         <div class="scroll-down">
-            <p class="scroll-text">Scroll Down</p>
+            <p class="scroll-text" id="up">Scroll Down</p>
             <a href="#down" class="scroll-link"><img class="scroll-img" src="images/arrow_down.png"></a>
         </div>
     </div>
@@ -200,8 +200,8 @@
                     <p class="footer-top-Stext">
                         Ready to explore?
                     </p>
-                    <a href="">
-                        <button class="footer-top-btn" type="submit">
+                    <a href="get_started.html">
+                        <button class="footer-top-btn">
                             Get started
                         </button>
                     </a>
@@ -216,8 +216,8 @@
                             Make your day
                         </h2>
                         <form class="footer-mid-item-form">
-                            <input type="text" placeholder="Email address" id="email">
-                            <img src="images/submit.png" for="email">
+                            <input type="email" placeholder="Email address" id="email">
+                            <label for="email"><img src="images/submit.png"></label>
                         </form>
                     </div>
                     <div class="footer-mid-item">
@@ -258,8 +258,13 @@
             </div>
         </div>
         <p class="copyright">Copyright 2025 QWERy</p>
+        <div class="footer__goDown">
+                    <p id="down">Scroll Up</p>
+                    <a href="#up">
+                        <img src="images/arrow_down.png">
+                    </a>
+                </div>
     </footer>
-    <span id="down">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
     <script>

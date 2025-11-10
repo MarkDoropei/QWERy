@@ -541,6 +541,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top: 107px;
+    align-items: center;
 }
 
 .footer-bottom-left{
@@ -554,6 +555,18 @@ body{
     font-size: 15px;
     line-height: 100%;
     letter-spacing: -0.2px;
+}
+
+.footer__goDown{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.25;
+}
+
+.footer__goDown img{
+    transform: rotateX(180deg);
 }
 
 .footer-bottom-right{
@@ -592,6 +605,116 @@ mark{
     text-decoration: underline;
     opacity: 0.5;
     color: #fff;
+}
+
+.register-label{
+    color:#fff;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.login-label{
+    color:#fff;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.register input{
+    border:1px solid #fff;
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+.login input{
+    border:1px solid #fff;
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+.option{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.register{
+    display: flex;
+    flex-direction: column;
+    gap:30px;  
+    align-items: center;
+}
+
+.register h3{
+    color:#fff;
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.login h3{
+    color:#fff;
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.register button{
+    width:100px;
+    height:50px; 
+    color:#fff;
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    background: transparent;
+    border:1px solid #fff;
+    border-radius: 15px;
+}
+
+.login button{
+    width:100px;
+    height:50px; 
+    color:#fff;
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    background: transparent;
+    border:1px solid #fff;
+    border-radius: 15px;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    gap:30px;  
+    align-items: center;
+}
+
+
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.back-btn{
+    width:120px;
+    height:50px; 
+    color:#fff;
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    background: transparent;
+    border:1px solid #fff;
+    border-radius: 15px;
 }
 
 @media(max-width:1470px){
@@ -833,7 +956,7 @@ mark{
         margin-left: 0;
     }
     .footer {
-        margin: 125px 10px 0 10px;
+        margin-top: 125px;
     }
     .footer-mid-item p {
         font-family: Open Sans;
@@ -912,6 +1035,9 @@ mark{
         height: 70px;
         margin-top: 40px;
     }
+    .culture__box{
+        margin:0;
+    }
 }   
 
 @media(max-width:560px){
@@ -925,7 +1051,7 @@ mark{
         display: none;
     }
     .holidays__img {
-        max-width: 90%;
+        max-width: 100%;
     }
     .bromo {
         margin-top: 75px;
@@ -960,5 +1086,8 @@ mark{
     .swiper-button-next,
     .swiper-button-prev{
         display: none;
+    }
+    .container{
+        max-width:365px
     }
 }

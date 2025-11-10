@@ -36,3 +36,7 @@ function clearHighlights() {
     parent.replaceChild(document.createTextNode(mark.textContent), mark);
   });
 }
+
+function sorry(){
+  alert('sorry this feauture temporary unworking')
+}

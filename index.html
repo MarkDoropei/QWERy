@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
     <script src="app.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <title>QWERy</title>
 </head>
 <body>
@@ -192,6 +194,71 @@
             </div>
         </div>
     </div>
+    <div class="popular-destinations">
+        <div class="container">
+             <div class="swiper mySwiper">
+                <div class="swiper-wrapper popular-destinations__wrapper">
+                    <div class="bromo-vulcano swiper-slide">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15806.180047325439!2d112.94271246425014!3d-7.942493323306079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd637aaab794a41%3A0xada40d36ecd2a5dd!2z0JLRg9C70LrQsNC9INCR0YDQvtC80L4!5e0!3m2!1sru!2sby!4v1763317801910!5m2!1sru!2sby"></iframe>
+                        <div class="border__popular-destinations">
+                             <h2>
+                                Mount Bromo: The Living Heart of Java
+                            </h2>
+                            <p>
+                                Nestled in the vast Tengger Caldera in East Java, Indonesia, Mount Bromo is not just a volcano; 
+                                it is a spiritual icon and one of the most breathtaking landscapes on Earth. 
+                            </p>
+                            <h4 onclick="show_infoBromo()">more information</h4>
+                        </div>
+                        <div class="more_info" id="bromo__info">
+                            <p>
+                                Its name, derived from the Javanese pronunciation of Brahma, the Hindu god of creation, hints at its deep cultural significance.
+                                What makes Bromo so uniquely captivating is its otherworldly setting. It rises 2,329 meters from the heart of a vast, sandy plain known as the "Sea of Sand" (Segara Wedi). This dramatic terrain, constantly reshaped by volcanic winds, is punctuated by the peaks of ancient volcanoes. Among them, Bromo is the most active, a constant, smoldering reminder of the raw power that formed this land.
+                                The most legendary experience is witnessing the sunrise from atop Mount Penanjakan. In the pre-dawn darkness, hundreds of visitors make the pilgrimage to the viewpoint. As the first rays of sun pierce the horizon, they illuminate a spectacular vista: a sea of clouds floating below, with the majestic profiles of Mount Bromo and the taller Mount Semeru, Java's highest peak, in the background. It is a moment of pure, silent magic.
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="komodo swiper-slide">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d137396.35152575054!2d119.43046478311763!3d-8.58319489051672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2db4545ba8b2bbbb%3A0x62b9b2c3feba412!2z0JrQvtC80L7QtNC-!5e0!3m2!1sru!2sby!4v1763318073293!5m2!1sru!2sby"></iframe>
+                        <div class="border__popular-destinations">
+                             <h2>
+                                Komodo Island: The Realm of the Living Dragon
+                            </h2>
+                            <p>
+                                In the heart of the Indonesian archipelago, nestled within the Lesser Sunda Islands, 
+                                lies a land that seems frozen in time—Komodo Island 
+                            </p>
+                            <h4 id="bromo__info" onclick="show_infoBromo()">more information</h4>
+                        </div>
+                        <div class="more_info" id="komodo__info">
+                            <p>
+                                This is not just another tropical paradise; it is the exclusive domain of the Komodo dragon, the world's largest living lizard, a prehistoric predator that rules over a stunningly rugged landscape.
+                                Komodo Island is part of the Komodo National Park, a UNESCO World Heritage Site, celebrated for its unparalleled biodiversity.
+                                The island itself is a dramatic tapestry of arid savannahs, rugged hills, and pockets of lush mangrove forests, all fringed by brilliant pink beaches and coral-rich turquoise waters. The unusual pink hue of the sand comes from tiny fragments of red coral mixed with the white sand, creating a surreal and beautiful coastline.
+                                The undisputed king of this realm is the Komodo dragon (Varanus komodoensis). Growing up to three meters long and weighing over 70 kilograms, these magnificent reptiles are the apex predators. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="nusa-tegara swiper-slide">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2017778.1815241587!2d121.12669291515319!3d-8.974630387634912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c52f24da8e93697%3A0x1030bfbcaf71ae0!2z0JLQvtGB0YIuINCd0YPRgdCwLdCi0LXQvdCz0LPQsNGA0LAsINCY0L3QtNC-0L3QtdC30LjRjw!5e0!3m2!1sru!2sby!4v1763318136175!5m2!1sru!2sby"></iframe>
+                        <div class="border__popular-destinations">
+                             <h2>
+                                Mount Bromo: The Living Heart of Java
+                            </h2>
+                            <p>
+                                Nestled in the vast Tengger Caldera in East Java, Indonesia, Mount Bromo is not just a volcano; 
+                                it is a spiritual icon and one of the most breathtaking landscapes on Earth. Its name, derived from 
+                            </p>
+                            <h4 id="bromo__info" onclick="show_infoBromo()">more information</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="footer-top">
@@ -267,13 +334,5 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
 </body>
 </html>

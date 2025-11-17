@@ -40,3 +40,17 @@ function clearHighlights() {
 function sorry(){
   alert('sorry this feauture temporary unworking')
 }
+
+function show_infoBromo(){
+  const myElement = document.getElementById('bromo__info');
+  myElement.classList.add('active');
+}
+
+function show_infoKomodo(){
+    alert('komodo');
+}
+
+function show_infoNusa(){
+    alert('nusa');
+}
+

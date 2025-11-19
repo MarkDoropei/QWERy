@@ -14,7 +14,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <title>QWERy</title>
 </head>
-<body>
+<body id="body">
     <div class="discover">
         <nav class="navbar">
             <h1 class="discover__header-text">QWERy</h1>
@@ -195,6 +195,16 @@
         </div>
     </div>
     <div class="popular-destinations">
+         <div class="more_info" id="bromo__info">
+                            <p>
+                                Its name, derived from the Javanese pronunciation of Brahma, the Hindu god of creation, hints at its deep cultural significance.
+                                What makes Bromo so uniquely captivating is its otherworldly setting. It rises 2,329 meters from the heart of a vast, sandy plain known as the "Sea of Sand" (Segara Wedi). This dramatic terrain, constantly reshaped by volcanic winds, is punctuated by the peaks of ancient volcanoes. Among them, Bromo is the most active, a constant, smoldering reminder of the raw power that formed this land.
+                                The most legendary experience is witnessing the sunrise from atop Mount Penanjakan. In the pre-dawn darkness, hundreds of visitors make the pilgrimage to the viewpoint. As the first rays of sun pierce the horizon, they illuminate a spectacular vista: a sea of clouds floating below, with the majestic profiles of Mount Bromo and the taller Mount Semeru, Java's highest peak, in the background. It is a moment of pure, silent magic.
+                            </p>
+                            <button onclick="removeBromo()">
+                                remove
+                            </button>
+                        </div>
         <div class="container">
              <div class="swiper mySwiper">
                 <div class="swiper-wrapper popular-destinations__wrapper">
@@ -210,14 +220,7 @@
                             </p>
                             <h4 onclick="show_infoBromo()">more information</h4>
                         </div>
-                        <div class="more_info" id="bromo__info">
-                            <p>
-                                Its name, derived from the Javanese pronunciation of Brahma, the Hindu god of creation, hints at its deep cultural significance.
-                                What makes Bromo so uniquely captivating is its otherworldly setting. It rises 2,329 meters from the heart of a vast, sandy plain known as the "Sea of Sand" (Segara Wedi). This dramatic terrain, constantly reshaped by volcanic winds, is punctuated by the peaks of ancient volcanoes. Among them, Bromo is the most active, a constant, smoldering reminder of the raw power that formed this land.
-                                The most legendary experience is witnessing the sunrise from atop Mount Penanjakan. In the pre-dawn darkness, hundreds of visitors make the pilgrimage to the viewpoint. As the first rays of sun pierce the horizon, they illuminate a spectacular vista: a sea of clouds floating below, with the majestic profiles of Mount Bromo and the taller Mount Semeru, Java's highest peak, in the background. It is a moment of pure, silent magic.
-                                
-                            </p>
-                        </div>
+                       
                     </div>
                     <div class="komodo swiper-slide">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d137396.35152575054!2d119.43046478311763!3d-8.58319489051672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2db4545ba8b2bbbb%3A0x62b9b2c3feba412!2z0JrQvtC80L7QtNC-!5e0!3m2!1sru!2sby!4v1763318073293!5m2!1sru!2sby"></iframe>
@@ -229,15 +232,17 @@
                                 In the heart of the Indonesian archipelago, nestled within the Lesser Sunda Islands, 
                                 lies a land that seems frozen in time—Komodo Island 
                             </p>
-                            <h4 id="bromo__info" onclick="show_infoBromo()">more information</h4>
+                            <h4 id="__info" onclick="show_infoBromo()">more information</h4>
                         </div>
                         <div class="more_info" id="komodo__info">
                             <p>
-                                This is not just another tropical paradise; it is the exclusive domain of the Komodo dragon, the world's largest living lizard, a prehistoric predator that rules over a stunningly rugged landscape.
-                                Komodo Island is part of the Komodo National Park, a UNESCO World Heritage Site, celebrated for its unparalleled biodiversity.
-                                The island itself is a dramatic tapestry of arid savannahs, rugged hills, and pockets of lush mangrove forests, all fringed by brilliant pink beaches and coral-rich turquoise waters. The unusual pink hue of the sand comes from tiny fragments of red coral mixed with the white sand, creating a surreal and beautiful coastline.
-                                The undisputed king of this realm is the Komodo dragon (Varanus komodoensis). Growing up to three meters long and weighing over 70 kilograms, these magnificent reptiles are the apex predators. 
+                                Its name, derived from the local belief in dragon-like 'ora' creatures, hints at its primordial essence. What makes Komodo uniquely captivating is its prehistoric inhabitants. The island is a sanctuary for giant monitor lizards, known as Komodo dragons. These living relics, reaching three meters in length, are the true sovereigns of this preserved world.
+                                The most legendary experience is encountering these giants in their natural habitat. With guides, visitors trek through sun-scorched savannas. Amidst rust-colored hills and acacia thickets, they might spot the majestic reptiles basking in the sun or stalking prey. It is a sight that transports you to an ancient era, when dinosaurs walked the earth, and stirs a profound, primal awe.
+                                The island's stunning landscapes complete the picture. A pink beach, tinted by coral sand, and turquoise waters teeming with life create a breathtaking contrast with the dragons' harsh interior realm. It is a place where myth and reality powerfully converge.
                             </p>
+                            <button onclick="removeKomodo()">
+                                remove
+                            </button>
                         </div>
                     </div>
                     <div class="nusa-tegara swiper-slide">
@@ -247,10 +252,21 @@
                                 Mount Bromo: The Living Heart of Java
                             </h2>
                             <p>
+                             
                                 Nestled in the vast Tengger Caldera in East Java, Indonesia, Mount Bromo is not just a volcano; 
                                 it is a spiritual icon and one of the most breathtaking landscapes on Earth. Its name, derived from 
                             </p>
-                            <h4 id="bromo__info" onclick="show_infoBromo()">more information</h4>
+                            <h4 id="nusa-tegara__info" onclick="show_infoBromo()">more information</h4>
+                        </div>
+                        <div class="more_info" id="nusa-tegara__info">
+                            <p>
+                                Its name, meaning "Eastern Southeast Islands," signals its position as Indonesia's southern frontier. What makes this archipelago so uniquely captivating is its dramatic, untamed beauty. The landscape is a stark contrast of arid, dragon-inhabited hills and some of the world's most vibrant coral reefs.   
+                                The most legendary experience is witnessing the otherworldly beauty of Kelimutu's tri-colored lakes. In the cool morning air, visitors pilgrimage to the volcano's summit. As the sun ascends, it reveals three adjacent craters, each filled with water of a mysteriously different hue—turquoise, green, and striking black. These shifting colors, believed to be the resting place of ancestral souls, create a moment of profound, spiritual wonder.
+                                From the pristine pink beaches of Padar Island to the ancient traditions of the Ngada villages, East Nusa Tenggara is a raw, breathtaking tapestry of nature and culture. It feels like discovering a hidden chapter of the Earth itself.
+                            </p>
+                            <button onclick="removeNusaTegara()">
+                                remove
+                            </button>
                         </div>
                     </div>
                 </div>

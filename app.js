@@ -44,13 +44,39 @@ function sorry(){
 function show_infoBromo(){
   const myElement = document.getElementById('bromo__info');
   myElement.classList.add('active');
+  const myBodyElement = document.body;
+  myBodyElement.classList.add('activebody');
 }
 
 function show_infoKomodo(){
-    alert('komodo');
+  const myElement = document.getElementById('komodo__info');
+  myElement.classList.add('active');
+  const myBodyElement = document.body;
+  myBodyElement.classList.add('activebody');
 }
 
 function show_infoNusa(){
-    alert('nusa');
+  const myElement = document.getElementById('nusa-tegara__info');
+  myElement.classList.add('active');
+  const myBodyElement = document.body;
+  myBodyElement.classList.add('activebody');
 }
 
+function removeBromo(){
+    const myElement = document.getElementById('bromo__info');
+    myElement.classList.remove('active');
+    const myBodyElement = document.body;
+    myBodyElement.classList.remove('activebody');
+}
+function removeKomodo(){
+    const myElement = document.getElementById('komodo__info');
+    myElement.classList.remove('active');
+    const myBodyElement = document.body;
+    myBodyElement.classList.remove('activebody');
+}
+function removeNusaTegara(){
+    const myElement = document.getElementById('nusa-tegara__info');
+    myElement.classList.remove('active');
+    const myBodyElement = document.body;
+    myBodyElement.classList.remove('activebody');
+}
